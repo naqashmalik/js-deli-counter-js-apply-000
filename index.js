@@ -20,8 +20,8 @@ function nowServing(line) {
     return "There is nobody waiting to be served!"
   } else {
     //console.log("Currently serving " + line.shift());
-    return 'Currently serving ' + line.shift();
-    expect(otherDeli).toEqual(["Steven", "Blake", "Avi", "Grace"]);
+    return 'Currently serving ' + line.shift()+'.';
+
   }
 
 }
