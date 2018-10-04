@@ -13,14 +13,17 @@ function currentLine(line){
   return "The line is currently: " + lineNamesandNumbers.join(', ');
 }
 
+
 function nowServing(line) {
   if(!line.length) {
     console.log("There is nobody waiting to be served!")
     return "There is nobody waiting to be served!"
   } else {
     //console.log("Currently serving " + line.shift());
-    return 'Currently serving Steven' + line.shift();
+    return 'Currently serving ' + line.shift();
+    expect(otherDeli).toEqual(["Steven", "Blake", "Avi", "Grace"]);
   }
+
 }
 
 function takeANumber(line, name){
@@ -34,7 +37,7 @@ takeANumber(katzDeli, "Ada")
 takeANumber(katzDeli, "Grace")
 takeANumber(katzDeli, "Kent")
 currentLine(katzDeli);
-nowServing(katzDeli, "Steven")
+nowServing(katzDeli);
 takeANumber(katzDeli, "Matz");
 currentLine(katzDeli);
 nowServing(katzDeli);
